@@ -1,6 +1,6 @@
 # Banking Risk Analysis (Power BI Report)
 
-An interactive Power BI report that analyses customer loan and deposit behaviour across a banking client base. Built on two data sources, the report helps banking teams understand credit exposure, deposit composition, and customer demographics- broken down by income band, nationality, occupation, and risk band.
+An interactive Power BI report that analyses customer loan and deposit behaviour across a banking client base. Built on two data sources, the report helps banking teams understand credit exposure, deposit composition, and customer demographics- broken down by income band, nationality, occupation, and banking relationship.
 
 ---
 
@@ -111,17 +111,17 @@ Contains detailed financial product and demographic data per customer.
 
 ### Loan Analysis
 
-**Purpose:** Deep dive into loan exposure- how loans are distributed across risk bands, nationalities, and occupations.
+**Purpose:** Deep dive into loan exposure- how loans are distributed across banking relationships, nationalities, and occupations.
 
 **Visuals:**
 - 4 **KPI Cards**: Total Loan, Bank Loans, Business Lending, Credit Card Balance
 - **Donut Chart**: Loan distribution by Income Band
-- **Clustered Column Chart**: Bank Loans by BRId (risk band)
+- **Clustered Column Chart**: Bank Loans by BRId (banking relationship ID)
 - **Clustered Column Chart**: Bank Loans by Nationality
 - **Clustered Column Chart**: Bank Loans by Occupation
-- 3 **Slicers**: Year of Joining, BRId (risk band), Gender- for cross-filtering
+- 3 **Slicers**: Year of Joining, BRId, Gender- for cross-filtering
 
-**Key question answered:** Which risk bands, nationalities, and occupations hold the largest share of the loan book? Where is credit risk most concentrated?
+**Key question answered:** Which banking relationships, nationalities, and occupations hold the largest share of the loan book? Where is credit risk most concentrated?
 
 ---
 
@@ -132,10 +132,10 @@ Contains detailed financial product and demographic data per customer.
 **Visuals:**
 - 4 **KPI Cards**: Total Deposit, Bank Deposits, Savings Accounts, Chequing Accounts
 - **Donut Chart**: Deposit distribution by Income Band
-- **Clustered Column Chart**: Bank Deposits by BRId (risk band)
+- **Clustered Column Chart**: Bank Deposits by BRId (banking relationship)
 - **Clustered Column Chart**: Bank Deposits by Nationality
 - **Clustered Column Chart**: Bank Deposits by Occupation
-- 3 **Slicers**: Year of Joining, BRId (risk band), Gender
+- 3 **Slicers**: Year of Joining, BRId, Gender
 
 **Key question answered:** Which customer segments are contributing most to deposit growth? Is deposit concentration aligned or misaligned with loan concentration?
 
@@ -150,7 +150,7 @@ Contains detailed financial product and demographic data per customer.
 - 4 **Slicers**: BRId, Gender, Year of Joining, and one additional dimension
 - **Navigation buttons** to move between pages
 
-**Key question answered:** What does the full banking picture look like for any selected customer segment, risk band, or time period?
+**Key question answered:** What does the full banking picture look like for any selected customer segment, banking relationship, or time period?
 
 ---
 
@@ -162,7 +162,7 @@ Here are five key things this report tells you, and what to do about them.
 
 ### 1. Loan concentration is a hidden risk
 
-If a large chunk of the total loan book is held by one or two risk bands, nationalities, or occupation groups, the bank is more exposed than it looks on the surface. A single economic shock to that group could cause a spike in defaults. **What to do:** Use the Loan Analysis page to check whether loans are spread across risk bands or bunched in one area. If they're bunched, that's a conversation to have with the credit risk team.
+If a large chunk of the total loan book is held by one or two nationalities, or occupation groups, the bank is more exposed than it looks on the surface. A single economic shock to that group could cause a spike in defaults. **What to do:** Use the Loan Analysis page to check whether loans are bunched in one area. If they're bunched, that's a conversation to have with the credit risk team.
 
 ---
 

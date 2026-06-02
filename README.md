@@ -7,7 +7,7 @@ An interactive Power BI report that analyses customer loan and deposit behaviour
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Data Sources](#data-sources)
+2. [Data Pipeline & Sources](#data-pipeline--sources)
 3. [Report Pages](#report-pages)
    - [Home Page](#home-page)
    - [Loan Analysis](#loan-analysis)
@@ -36,10 +36,13 @@ The report is designed to answer questions such as:
 
 ---
 
-## Data Sources
+## Data Pipeline & Sources
+### Data Pipeline
+- Raw data was connected and stored in MySQL
+- Exploratory Data Analysis (EDA) was performed using Python (pandas, seaborn)
+- Cleaned and processed data was then connected to Power BI for visualization and dashboard building
 
-The report uses two tables loaded into the data model.
-
+### The report uses two tables loaded into the data model.
 ### banking-clients
 
 Contains client-level banking engagement data.
